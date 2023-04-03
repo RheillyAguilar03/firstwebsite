@@ -1,0 +1,484 @@
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url(BebasNeue-Regular.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+    overflow-x: hidden;
+    font-family: 'BebasNeue-Regular';
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #2b2d42;
+    padding: 32px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 8px 16px rgb(255, 255, 255);
+}
+
+.header-logo {
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-logo span {
+    color: #d90429;
+}
+
+.header-navigation a {
+    color: #fff;
+    padding: 0 24px;
+    font-size: 25px;
+}
+
+.header-navigation a:hover {
+    color: #d90429;
+}
+
+header .header-icons a {
+    font-size: 25px;
+    color: #fff;
+    margin-left: 24px;
+}
+
+header .header-icons a:hover {
+    color: #d90429;
+}
+
+#toggle {
+    display: none;
+}
+
+.fa-bars {
+    font-size: 24px;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 24px;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    padding: 32px 9%;
+}
+
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    min-height: 93.3vh;
+    background: url(images/mviebackground.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.home-content {
+    max-width: 700px;
+}
+
+.home-content h3 {
+    font-size: 50px;
+    color: #2b2d42;
+}
+
+.home-content span {
+    font-size: 56px;
+    color: #d90429;
+    line-height: 1.5;
+}
+
+.home-content p {
+    font-size: 30px;
+    color: #2b2d42;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 16px;
+    border-radius: 25px;
+    background: #2b2d42;
+    color: #fff;
+    padding: 14px 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn:hover, .btn02:hover {
+    background: #d90429;
+}
+
+.tv-show-heading {
+    text-align: center;
+    font-size: 90px;
+    margin-top: 50px;
+    color: #d90429;
+}
+
+.tv-show-card{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 130px;
+}
+
+
+.tv-show-choice{
+    border: 3px solid #d90429;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 50px #2b2d42;
+    background: #edf2f4;
+}
+
+.tv-show-choice img{
+    width: 250px;
+}
+
+
+.tv-show-title{
+    font-size: 24px;
+    color: #d90429;
+    margin-bottom: -5px;
+}
+
+.fa-star{
+    color: #ffba08;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tv-show-description{
+    font-size: 16px;
+}
+
+.btn02 {
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    border-radius: 25px;
+    background: #2b2d42;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.movie-section{
+    background: #2b2d42;
+}
+
+.movie-heading{
+    text-align: center;
+    font-size: 90px;
+    margin-top: 50px;
+    color: #d90429;
+}
+
+.movie-choice{
+    border: 3px solid #2b2d42;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #fff;
+    background: #edf2f4;
+}
+
+.movie-choice img{
+    width: 250px;
+}
+
+.movie-card{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 105px;
+}
+
+.movie-title{
+    font-size: 24px;
+    color: #2b2d42;
+    margin-bottom: -5px;
+}
+
+.btn03 {
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    border-radius: 25px;
+    background: #d90429;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn03:Hover{
+    background: #2b2d42;
+}
+
+.my-list-heading {
+    text-align: center;
+    font-size: 90px;
+    margin-top: 60px;
+    color: #d90429;
+}
+
+.my-list-card{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 90px;
+}
+
+.my-list-choice{
+    border: 3px solid #d90429;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #fff;
+    background: #edf2f4;
+}
+
+.my-list-choice img{
+    width: 250px;
+}
+
+.my-list-title{
+    font-size: 24px;
+    color: #d90429;
+    margin-bottom: -5px;
+}
+
+.my-list{
+    width: 200px;
+    border: 3px solid #d90429;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #fff;
+    background: #edf2f4;
+}
+
+.my-list i {
+    font-size: 75px;
+    text-align: center;
+    padding-top: 130px;
+    padding-left: 70px;
+    color: #d90429;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+
+    html {
+        font-size: 55%;
+
+    }
+
+    header {
+        padding: 32px;
+    }
+
+    section {
+        padding: 32px;
+    }
+
+    .home-section {
+        background-position: right;
+    }
+
+    .home-content h3 {
+        font-size: 40px;
+    }
+
+    .home-content span {
+        font-size: 30px;
+    }
+
+    .home-content p {
+        font-size: 15px;
+
+    }
+
+
+    .tv-show-card{
+        display: grid;
+        grid-template-columns: 300px 300px;
+        gap: 50px;
+    }
+
+    .movie-card{
+        display: grid;
+        grid-template-columns: 300px 300px;
+        gap: 50px;
+    }
+
+    .my-list-card{
+        display: grid;
+        grid-template-columns: 300px 300px ;
+        gap: 50px;
+    }
+
+    .my-list {
+        width: 250px;
+    }
+
+    .my-list i {
+        padding-left: 100px;
+    }
+
+}
+
+
+@media (max-width: 782px) {
+
+    .fa-bars {
+        display: block;
+    }
+
+    .header-navigation {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #2b2d42;
+        border-top: 2px solid #d90429;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    #toggle:checked~.header-navigation {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+    }
+
+    .header-navigation a {
+        margin: 24px;
+        padding: 24px;
+        background: #2b2d42;
+        border: 2px solid #d90429;
+        display: block;
+    }
+
+    .my-list{
+        width: 250px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .my-list i {
+        padding-left: 100px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+
+    html {
+        font-size: 5%;
+
+    }
+
+    .tv-show-card{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .movie-card{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    header .header-icons a{
+        font-size: 20px;
+    }
+
+    .my-list-card{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .my-list{
+        height: 380px;
+        width: 260px;
+    }
+
+}
